@@ -24,6 +24,7 @@ function cadastro(){
     
     localStorage.setItem(`usuario${index}`, JSON.stringify(login))
     localStorage.setItem("usuario_index", index + 1)
+    showLogin()
 }
 
 function login(){
@@ -37,7 +38,7 @@ function login(){
         let usuario = JSON.parse(localStorage.getItem(`usuario${i}`));
 
         if (usuario && usuario.user === nome && usuario.senha === senha1) {
-            window.location.href = "../Catalogo/index.html"
+            window.location.href = "../filmes/index.html"
             let encontrou = true
             return
         }
