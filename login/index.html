@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="../../public/letterflix2.png" alt="LetterFlix" id="logo">
+    <div class="box">
+        <div class="choose">
+            <button class="btn_cadastro" onclick="showCadastro()">cadastro</button>
+            <button class="btn_login" onclick="showLogin()">login</button>
+        </div>
+        <div class="box2">
+            <div class="cadastro">
+                <div class="cadastrod1">
+                    <label for="user1">User</label>
+                    <input type="text" id="user1" placeholder="Usuário">
+                </div>
+                <div class="cadastrod2">
+                    <label for="senha1">Senha</label>
+                    <input type="password" id="senha1" placeholder="Mínimo 8 caracteres">
+                    <div onclick="showPassword()">
+                        <img src="../../public/oio_fechado.png" alt="oio" id="eye">
+                    </div>
+                </div>
+                <div class="cadastrod3">
+                    <label for="senhac">Confirmar senha</label>
+                    <input type="password" id="senhac" placeholder="Mínimo 8 caracteres">
+                </div>
+                <div class="divbc">
+                    <button onclick="cadastro()">CADASTRO</button>
+                </div>
+            </div>
+            <div class="login">
+                <div class="logind1">
+                    <label for="user2">User</label>
+                    <input type="text" id="user2" placeholder="Usuário">
+                </div>
+                <div class="logind2">
+                    <label for="senha2">Senha</label>
+                    <input type="password" id="senha2" placeholder="Mínimo 8 caracteres">
+                </div>
+                <div class="divbl">
+                    <button onclick="login()">Login</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
